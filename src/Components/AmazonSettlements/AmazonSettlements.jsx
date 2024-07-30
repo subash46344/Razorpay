@@ -1,6 +1,8 @@
 import React from "react";
 import Automate from "./Automate";
 import "./AmazonSettlementsStyle.css";
+import CircleIcon from '@mui/icons-material/Circle';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 const AmazonSettlements = () => {
   const content = [
@@ -33,14 +35,15 @@ const AmazonSettlements = () => {
           <div className="content_main_block_right_block">
             {item.check_add_blancing && (
               <div className="blancing">
-                <input type="checkbox" />
+                {/* <input type="checkbox" /> */}
+                <CheckCircleOutlineIcon sx={{ color: 'green',fontSize: 20 }}/>
                 <h6>{item.check_add_blancing}</h6>
               </div>
             )}
             {/* Heading */}
             <div className="right_block_heading">
               {/* <input type="radio" /> */}
-              <strong>.</strong>
+              <CircleIcon sx={{ color: '#4d7fff',fontSize: 20 }}/>
               <div className="inner_content">
                 <h4>{item.p_heading}</h4>
                 <p>{item.p_paragraph}</p>

@@ -1,11 +1,18 @@
 import React from "react";
 import "./HomeStyle.css";
 import LogoIcon from "./../../Assets/x-logo.svg";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
 
 function Home() {
   return (
     <div className="home_container">
       {/* <div className="home_sub_container"> */}
+      <div className="header_main">
+        <div className="header_sub">
+          <button><ControlPointIcon fontSize="5"/> PAYOUT <span style={{border:"1px solid black"}}></span><ExpandMoreIcon fontSize="5"/></button>
+        </div>
+      </div>
         <div className="razorpay_lite_block">
           <div className="razorpay_x_content">
             <img src={LogoIcon} alt="" /> <strong>RazorpayX Lite </strong>{" "}

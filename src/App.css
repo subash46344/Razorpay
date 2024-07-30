@@ -4,8 +4,6 @@
 }
 
 .app{
-  width: 100%;
-  height: auto;
   background: var(--primaryColor);
   display: flex;
   align-items: center;

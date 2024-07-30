@@ -1,13 +1,14 @@
 import React from 'react';
 import { FaUser, FaMoneyBillWave, FaExclamationTriangle } from 'react-icons/fa';
+import iconsvg from "./../../Assets/x-logo.svg"
 import './ActivityFeedStyle.css';
 
 const ActivityFeed = () => {
     const activities = [
         { date: '23 JUL', day: 'Tuesday', icon: <FaUser />, description: '1 contact created' },
-        { date: '9 JUL', day: 'Tuesday', icon: <FaMoneyBillWave />, description: '₹ 300.00 credited into the account' },
-        { date: '1 JUL', day: 'Monday', icon: <FaMoneyBillWave />, description: '1 payout worth ₹ 2,36,695.00 created' },
-        { date: '24 JUN', day: 'Monday', icon: <FaMoneyBillWave />, description: '₹ 300.00 credited into the account' },
+        { date: '9 JUL', day: 'Tuesday', icon: iconsvg, description: '₹ 300.00 credited into the account' },
+        { date: '1 JUL', day: 'Monday', icon: iconsvg, description: '1 payout worth ₹ 2,36,695.00 created' },
+        { date: '24 JUN', day: 'Monday', icon: iconsvg, description: '' },
     ];
 
     return (
@@ -31,7 +32,11 @@ const ActivityFeed = () => {
                             </div>
                             <p style={{border:"1px solid dimgray"}}></p>
                             <div className='icon_c'>
-                                <p>{activity.icon}</p>
+                            {typeof activity.icon === 'string' ? (
+                                        <img src={activity.icon} alt="" />
+                                    ) : (
+                                        <p>{activity.icon}</p>
+                                    )}
                             </div>
                         </div>
                         <div className='des_card_active'>

@@ -1,5 +1,5 @@
 .content_main_block {
-    width: 55%;
+    width: 99%;
     display: flex;
     border-top: 3px solid green;
     color: #fff;
@@ -86,7 +86,7 @@
 
 /* Automate css */
 .automation_main_block{
-    width: 55%;
+    width: 99%;
     border: 1px solid rgb(46, 46, 148);
     border-radius: 10px;
     height: 120px;
@@ -102,18 +102,16 @@
 .automation_banner_block {
     position: relative;
     width: 15%;
-    height: 100%; /* Adjust height based on your needs */
-    background: #1a1a1a; /* Dark background color */
+    height: 100%;
+    background: #1a1a1a;
     overflow: hidden;
   }
   
   .automation_banner_block:after {
     content: '';
     position: absolute;
-    /* top: 0; */
-    /* right: 0; */
-    border-top: 100px solid red; /* Match the height of the block */
-    border-left: 10vw solid #008ce6; /* Creates the slanted blue overlay */
+    border-top: 100px solid red; 
+    border-left: 10vw solid #008ce6;
     height: 100%;
   }
 
@@ -146,7 +144,31 @@
     margin-top: 15px;
 }
 .close_icon{
-    margin-left: auto;
+    text-align: right;
     cursor: pointer;
-    padding: 10px 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+    .automation_main_block{
+        height: auto;
+    }
+    .automation_banner_block{
+        display: none;
+    }
+    .automation_content_block{
+        width: 70%;
+        height: 100%;
+        padding: 2px 10px;
+    }
+    .automation_btn_block{
+        width: 35%;
+    }
+    .automation_btn_block button{
+        width: 90%;
+    }
 }

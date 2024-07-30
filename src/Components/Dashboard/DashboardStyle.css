@@ -1,7 +1,7 @@
 
 .insights {
     padding: 20px;
-    width: 55%;
+    width: 99%;
 }
 
 .insights-header {
@@ -29,7 +29,7 @@
     width: 100%;
     height: auto;
     margin: 50px 0px;
-    background-color: rgba(41, 40, 40, 0.918);
+    background-color: #161a2f;
 }
 
 .payout-volume {
@@ -51,7 +51,3 @@
     font-weight: bold;
     color: #ffffff;
 }
-/* .graph-wrapper {
-    height: 100px;
-    width: 100%;
-} */

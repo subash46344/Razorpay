@@ -10,14 +10,15 @@ function Automate() {
           <h2>Automate Bookkeeping For Payouts</h2>
           <p>
             {" "}
-            erfnjer nnjernf kn knn nnf k n fe njefjenkjfnekjfnenfnewnje nijnjfe
-            w
+            Close your books 60% faster and with better accuracy by automating Bookkeeping for your Payouts.
           </p>
         </div>
         <div className="automation_btn_block">
-          <FaTimes color="#fff" className="close_icon" />
+            <div className="close_icon">
+            <FaTimes color="#fff" />
+            </div>
           <button>
-            conten <FaArrowRight />
+            Connect Zoho Books <FaArrowRight />
           </button>
         </div>
       </section>

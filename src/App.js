@@ -5,17 +5,20 @@ import AccountCard from "./Components/OnboardingUpdate/AccountCard";
 import Dashboard from "./Components/Dashboard/Dashboard";
 // import OnboardingUpdate from "./Components/OnboardingUpdate/OnboardingUpdate";
 // import ContentComponent from "./Components/AmazonSettlements/ContentComponent";
+import NavbarComponent from "./../src/Components/Navbar/NavbarComponent"
 
 
 function App() {
   return (
     <div className="app">
-      <Home />
+      {/* <Home /> */}
       {/* <OnboardingUpdate /> */}
-      <AccountCard/>
+      {/* <AccountCard/>
       <AmazonSettlements />
-      <Dashboard/>
+      <Dashboard/> */}
       {/* <ContentComponent/> */}
+<NavbarComponent/>
+
     </div>
   );
 }

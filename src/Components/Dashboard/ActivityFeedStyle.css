@@ -56,9 +56,9 @@
     margin: 5px 0px;
 }
 .card_active{
-    width: 50%;
+    width: 70%;
     display: flex;
-    background-color: rgba(41, 40, 40, 0.918);
+    background-color: #161a2f;
 }
 .card_active .content{
     display: flex;
@@ -76,9 +76,10 @@
 }
 .des_card_active{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding-left: 10px;
+    width: 50%;
 }
 .active_Card_btn{
     display: flex;
@@ -88,7 +89,7 @@
 }
 .load-more {
     margin-top: 20px;
-    background-color: rgba(41, 40, 40, 0.918);
+    background-color: #161a2f;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -99,6 +100,15 @@
 .load-more:hover {
     text-decoration: underline;
 }
-.error-icon{
+/* .error-icon{
     padding: 0px 10px;
+} */
+
+@media (min-width: 0px) and (max-width: 700px) {
+    .card_active .content{
+        width: 70%;
+    }
+    .card_active .icon_c{
+        width: 30%;
+    }
 }

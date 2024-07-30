@@ -1,17 +1,16 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import "./AccountCard.css"; // Import the CSS file
+import "./AccountCard.css";
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 
 const AccountCard = () => {
   return (
+  <>
+    <h1 style={{color:"#fff",fontSize:"14px",padding:"10px 0px"}}>Onboarding Updates (1)</h1>
     <div className="account-card">
       <div className="account-card-left">
         <div className="icon-container">
-          <img
-            src="path/to/icon.png"
-            alt="Account Icon"
-            className="account-icon"
-          />
+          <AccountBalanceIcon sx={{fontSize:70}}/>
         </div>
         <div className="account-label">CURRENT ACCOUNT</div>
       </div>
@@ -51,6 +50,7 @@ const AccountCard = () => {
         </button>
       </div>
     </div>
+  </>
   );
 };
 
