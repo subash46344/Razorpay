@@ -1,19 +1,22 @@
 import React from "react";
-import './AmazonSettlementsStyle.css'
+import Automate from "./Automate";
+import "./AmazonSettlementsStyle.css";
 
 const AmazonSettlements = () => {
   const content = [
     {
       heading: "Amazon Instant Settlements",
       p_heading: "Let's get you started",
-      p_paragraph: "Complete your application and get instant access to your Amazon payouts",
-      button: ["Apply Now"],
+      p_paragraph:
+        "Complete your application and get instant access to your Amazon payouts",
+      button: ["APPLY NOW"],
     },
     {
       heading: "Creating payouts in Live mode",
       check_add_blancing: "Add balance to create payouts in Live mode",
       p_heading: "Create payout",
-      p_paragraph: "There are multiple ways in which you can create the first payouts:",
+      p_paragraph:
+        "There are multiple ways in which you can create the first payouts:",
       button: ["MAKE A PAYOUT", "SHOW APPS FOR ME", "API PAYOUTS"],
     },
   ];
@@ -24,7 +27,7 @@ const AmazonSettlements = () => {
         <section className="content_main_block" key={index}>
           {/* Block Left */}
           <div className="content_main_block_left_block">
-            <h1>{item.p_heading}</h1>
+            <h1>{item.heading}</h1>
           </div>
           {/* Block Right */}
           <div className="content_main_block_right_block">
@@ -36,14 +39,20 @@ const AmazonSettlements = () => {
             )}
             {/* Heading */}
             <div className="right_block_heading">
-              <input type="radio" />
+              {/* <input type="radio" /> */}
+              <strong>.</strong>
               <div className="inner_content">
-                <h4>{item.heading}</h4>
+                <h4>{item.p_heading}</h4>
                 <p>{item.p_paragraph}</p>
                 {/* Button Block */}
                 <div>
                   {item.button.map((btnText, btnIndex) => (
-                    <button key={btnIndex}>{btnText}</button>
+                    <button
+                      key={btnIndex}
+                      className={btnIndex === 0 ? "active" : "inactive"}
+                    >
+                      {btnText}
+                    </button>
                   ))}
                 </div>
               </div>
@@ -51,6 +60,7 @@ const AmazonSettlements = () => {
           </div>
         </section>
       ))}
+      <Automate/>
     </>
   );
 };

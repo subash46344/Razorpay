@@ -1,0 +1,104 @@
+
+.activity-feed {
+    margin: 0 auto;
+    width: 99%;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2e2e2e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.header h3 {
+    font-size: 18px;
+}
+
+.header p {
+    font-size: 12px;
+    color: #888888;
+}
+
+.filters {
+    color: #3a9ff5;
+    cursor: pointer;
+}
+
+.activity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.active_card_main_block{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active_card_main_block_sub{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.active_card_main_block_sub_card_block_main{
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: 5px 0px;
+}
+.card_active{
+    width: 50%;
+    display: flex;
+    background-color: rgba(41, 40, 40, 0.918);
+}
+.card_active .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+.card_active .icon_c{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10px;
+    width: 50%;
+}
+.des_card_active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+.active_Card_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.load-more {
+    margin-top: 20px;
+    background-color: rgba(41, 40, 40, 0.918);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0;
+    padding: 15px;
+}
+
+.load-more:hover {
+    text-decoration: underline;
+}
+.error-icon{
+    padding: 0px 10px;
+}

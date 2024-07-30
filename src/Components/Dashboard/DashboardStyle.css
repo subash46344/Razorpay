@@ -1,0 +1,57 @@
+
+.insights {
+    padding: 20px;
+    width: 55%;
+}
+
+.insights-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.insights-header h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.insights-header span {
+    color: #3a9ff5;
+    cursor: pointer;
+}
+
+
+/* graph css  */
+
+.payout-graph-container {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    margin: 50px 0px;
+    background-color: rgba(41, 40, 40, 0.918);
+}
+
+.payout-volume {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.payout-volume p {
+    margin: 0;
+    font-size: 14px;
+    color: #888888;
+}
+
+.payout-volume h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+/* .graph-wrapper {
+    height: 100px;
+    width: 100%;
+} */
